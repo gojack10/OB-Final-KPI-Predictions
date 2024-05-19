@@ -1,0 +1,34 @@
+name: Render Graph
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  render-graph:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set Up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Python Script
+      run: python data.py
+
+    - name: Upload Graph
+      uses: actions/upload-artifact@v2
+      with:
+        name: graph
+        path: kpi_predictions.png
