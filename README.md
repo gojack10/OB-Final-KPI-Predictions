@@ -1,6 +1,6 @@
 # Menlo College KPI Predictions
 
-This project aims to make KPI (Key Performance Indicator) predictions for Menlo College using a blend of hypothetical (per assignment instructions) and real data. The predictions cover various metrics such as student satisfaction, faculty satisfaction, graduation rates, and student employment rates.
+This school project aims to make KPI (Key Performance Indicator) predictions for Menlo College using a blend of hypothetical (per assignment instructions) and real data. The predictions cover various metrics such as student satisfaction, faculty satisfaction, graduation rates, and student employment rates.
 
 ## Project Description
 
@@ -20,7 +20,7 @@ The graphs below show the actual and predicted values for each KPI:
 
 ## Usage
 
-To generate the predictions and graphs, run the `data.py` script:
+To generate the predictions and graphs, run the `data.py` script (make any changes to the baseline data if you would like to use your own data):
 
 ```bash
 python data.py
